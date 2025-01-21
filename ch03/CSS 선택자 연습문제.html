@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Practice</title>
+
+    <style>
+        /* 1 */
+        h1 {
+            color : #4A90E2;
+        }
+
+        /* 2 */
+        header {
+            background-color: #F5F5F5;
+        }
+        /* 3 */
+        span.highlight {
+            color : #F39C12;
+        }
+
+        /* 4 */
+        nav a {
+            color : #E74C3C;
+        }
+        /* 5 */
+        .intro {
+            background-color: #E8F4F8;
+        }
+        /* 6 */
+        h2.title {
+            color :#27AE60;
+        }
+        /* 7 */
+        .content > .article:nth-child(1)  {
+            background-color: #BDC3C7;
+        }
+
+        /* 8 */
+        .content > .article:nth-of-type(2)  {
+            background-color: #FAD7A0;;
+        }
+
+        /* 9 */
+        .article > p {
+            color : #9B59B6;
+        }
+
+
+        /* 10 */
+        section {
+            border : 1px dashed #E74C3C;
+        }
+        /* 11 */
+        footer a {
+            color : #34495E;
+        }
+        /* 12 */
+        header > li:first-child {
+            border: 1px solid #111;
+        }
+        /* 13 */
+        header > li:last-child {
+            border: 1px solid #111;
+        }
+        /* 14 */
+        header > nav > ul > li {
+            background-color: #D5DBDB;
+        }
+        /* 15 */
+        header > nav > ul > li:nth-child(1) > a {
+            color : #00f;
+        }
+        /* 16 */
+        header > nav > ul > li:nth-child(2) > a {
+            color: #0f0;
+        }
+        /* 17 */
+        body > section {
+            border: 1px solid #BDC3C7;
+
+        }
+        /* 18 */
+        .content h2 {
+            color: #1F618D;
+        }
+        /* 19 */
+        header li {
+            list-style-type: square;
+        }
+        /* 20 */
+        footer > a:nth-of-type(1) {
+            color: #27AE60;
+        }
+        /* 21 */
+        section:first-of-type {
+            border: 2px dashed #16A085;
+        }
+        /* 22 */
+        section:last-of-type {
+            background-color: #bbe1ee;
+        }
+        /* 23 */
+        p:nth-of-type(1) {
+            color: #D35400;
+        }
+        /* 24 */
+        p:nth-last-of-type() {
+            font-style: italic;
+            color: #2980B9;
+        }
+        /* 25 */
+        .title  + p {
+            background-color: #E8F4F8;
+        }
+        /* 26 */
+        .title ~ * {
+            color: #8E44AD;
+        }
+        /* 27 */
+        h2:nth-of-type() {
+            color: #E67E22;
+        }
+        /* 28 */
+        ol > li:nth-child(2n+1) {
+            color: orange;
+        }
+        /* 29 */
+        .intro:hover {
+            background-color: #E74C3C;
+        }
+        /* 30 */
+        footer > a:last-child::after {
+            content: 'c';
+        }
+        
+        
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>CSS Selector Practice</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="intro">
+        <p>Hello, <span class="highlight">world</span>!</p>
+    </section>
+    <section class="content">
+        <div class="article">
+            <h2 class="title">Article 1</h2>
+            <p>Content of artice</p>
+            <ol>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ol>
+        </div>
+        <div class="article">
+            <h2 class="title">Article 2</h2>
+            <p>Content of article 2</p>
+        </div>
+    </section>
+    <footer>
+        <p>Footer content here</p>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Copyright</a></li>
+        
+
+    </footer>
+</body>
+</html>
